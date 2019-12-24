@@ -1,0 +1,97 @@
+header {
+  background: linear-gradient(rgba(33, 3, 104, 0.4), rgba(11, 2, 27, 0.6)), url(../assets/code.png);
+  height: 100vh;
+  background-size: cover; }
+  header nav .menu-list-item {
+    list-style: none;
+    margin-right: 18px;
+    color: white; }
+    header nav .menu-list-item a {
+      color: white; }
+  header nav .menu-list-item:hover {
+    opacity: 0.6;
+    transform: scale(1.1);
+    padding: 5px 5px; }
+  header nav .menu {
+    position: fixed;
+    z-index: 1; }
+  header .container {
+    display: flex;
+    justify-content: space-between; }
+  header .menu-list {
+    display: flex; }
+  header .container-title, header .a-about-me {
+    text-align: center; }
+  header .paragraph {
+    color: white;
+    font-size: 20px; }
+  header .paragraph:hover {
+    color: slateblue; }
+  header #container-title-flex {
+    max-width: 1580px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 18vh;
+    margin-right: 0px;
+    margin-bottom: 18vh;
+    margin-left: 0px; }
+  header .h1-title {
+    font-size: 50px;
+    color: white;
+    margin: 0; }
+  header .h2-title {
+    font-size: 25px;
+    color: white; }
+  header .a-title {
+    font-size: 14px;
+    color: white;
+    background: #210368;
+    padding: 14px 24px;
+    width: 120px;
+    display: inline-block; }
+  header .a-title:hover {
+    opacity: 0.7; }
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(#041eb1, #504f52); }
+  body .container {
+    max-width: 1280px;
+    width: 90%;
+    margin: auto; }
+  body a {
+    text-decoration: none; }
+  body .container-data {
+    display: flex;
+    justify-content: space-evenly; }
+    body .container-data img {
+      width: 350px;
+      height: 470px; }
+  body h3 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: normal;
+    color: white; }
+  body .text-data h4, body .text-data p {
+    color: white;
+    font-size: 20px; }
+  body #about {
+    margin-top: 105px; }
+    body #about .item {
+      width: 28%;
+      text-align: center; }
+      body #about .item ul li:nth-child(2) {
+        font-weight: bold;
+        font-size: 19px;
+        margin-top: 8px;
+        margin-bottom: 20px; }
+      body #about .item ul li:nth-child(3) {
+        line-height: 30px; }
+    body #about .container-about {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+  body ul li {
+    list-style: none; }

@@ -1,0 +1,82 @@
+header{
+    background: linear-gradient(rgba(33, 3, 104, 0.4), rgba(11, 2, 27, 0.6)), url(../assets/code.png);
+    height: 100vh;
+    background-size: cover;
+    nav{
+        .menu-list-item{
+            list-style: none;
+            margin-right: 18px;
+            color:white;
+            a{
+                color: white;
+            }
+        }
+        .menu-list-item:hover{
+            opacity: 0.6;
+            transform: scale(1.1);
+            padding: 5px 5px;
+        }
+
+        .menu{
+            position: fixed;
+            z-index: 1;
+        }
+    }
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-list{
+    display: flex;
+}
+
+.container-title,.a-about-me{
+    text-align: center;
+}
+
+.paragraph{
+    color:white;
+    font-size: 20px;
+}
+
+.paragraph:hover{
+    color: slateblue;  
+}
+
+#container-title-flex{
+    max-width: 1580px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 18vh;
+    margin-right: 0px;
+    margin-bottom: 18vh;
+    margin-left: 0px;
+}
+
+.h1-title{
+    font-size:50px ;
+    color: white;
+    margin:0;
+}
+
+.h2-title{
+    font-size: 25px;
+    color:white;
+}
+
+.a-title{
+    font-size: 14px;
+    color: white;
+    background: rgb(33, 3, 104);
+    padding: 14px 24px;
+    width: 120px;
+    display: inline-block;
+}
+
+.a-title:hover{
+    opacity: 0.7;
+}
+}
