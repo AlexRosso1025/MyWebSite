@@ -1,7 +1,7 @@
 body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(rgb(4, 30, 177), rgb(80, 79, 82));
+    background: linear-gradient(rgb(62, 88, 235), rgb(80, 79, 82));
     .container{
         max-width: 1280px;
         width: 90%;
@@ -56,6 +56,118 @@ body{
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
+        }
+    }
+
+    #knowledge {
+        .container-knowledge{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            .card{
+                display: flex;
+                justify-content: space-around;
+                width: 27%;
+                padding: 34px 30px 38px 30px;
+                border-radius: 10px;
+                margin-bottom: 40px;
+                position: relative;
+                
+                h4{
+                    font-size:30px;
+                    margin:0;  
+                    color:white;
+                    margin-top: 45px;
+                    margin-right: 5px;
+                }
+
+                p{
+                    color: white;
+                    margin-top: 55px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+            }
+            .black{
+                background-image:linear-gradient(to top, #3a3939,#646468);   
+                box-shadow: 0 12px 30px 0 rgba(110, 110, 114, 0.5);
+            }
+
+
+        }
+    }
+
+    #contact{
+        form{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 77%;
+            margin: auto;
+        }
+        
+        .Email,.Name{
+            width: 49%;
+            margin-bottom: 15px;
+            padding: 18px 0;
+            border: 0;
+            text-align: center;
+            background: white;
+            font-size: 17px;
+        }
+        
+        textarea{
+            padding: 18px 0;
+            border: 0;
+            font-size: 18px;
+            margin-bottom: 40px;
+            text-align: center;
+            background: white;
+            width: 100%;
+        }
+        
+        #contact input[type="submit"]{
+            width: 166px;
+            margin:auto;
+        }
+        
+        .contact-info{
+            margin-top: 60px;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .contact-info img{
+            width: 28px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .send{
+            width: 166px;
+            margin:auto;
+            font-size: 14px;
+            color: white;
+            background: rgb(33, 3, 104);
+            padding: 14px 24px;
+            width: 120px;
+            display: inline-block;
+        }
+    }
+
+    #projects{
+        .container-projects{
+        display: flex;
+        justify-content: space-around;}
+        .project{
+            img{
+                width: 450px;
+                height: 400px;
+            }
+            h4{
+                font-size: 25px;
+                text-align: center;
+            }
         }
     }
 

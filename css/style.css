@@ -56,7 +56,7 @@ header {
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(#041eb1, #504f52); }
+  background: linear-gradient(#3e58eb, #504f52); }
   body .container {
     max-width: 1280px;
     width: 90%;
@@ -93,5 +93,102 @@ body {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around; }
+  body #knowledge .container-knowledge {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    body #knowledge .container-knowledge .card {
+      display: flex;
+      justify-content: space-around;
+      width: 27%;
+      padding: 34px 30px 38px 30px;
+      border-radius: 10px;
+      margin-bottom: 40px;
+      position: relative; }
+      body #knowledge .container-knowledge .card h4 {
+        font-size: 30px;
+        margin: 0;
+        color: white;
+        margin-top: 45px;
+        margin-right: 5px; }
+      body #knowledge .container-knowledge .card p {
+        color: white;
+        margin-top: 55px;
+        margin-left: 10px;
+        margin-right: 10px; }
+    body #knowledge .container-knowledge .black {
+      background-image: linear-gradient(to top, #3a3939, #646468);
+      box-shadow: 0 12px 30px 0 rgba(110, 110, 114, 0.5); }
+  body #contact form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 77%;
+    margin: auto; }
+  body #contact .Email, body #contact .Name {
+    width: 49%;
+    margin-bottom: 15px;
+    padding: 18px 0;
+    border: 0;
+    text-align: center;
+    background: white;
+    font-size: 17px; }
+  body #contact textarea {
+    padding: 18px 0;
+    border: 0;
+    font-size: 18px;
+    margin-bottom: 40px;
+    text-align: center;
+    background: white;
+    width: 100%; }
+  body #contact #contact input[type="submit"] {
+    width: 166px;
+    margin: auto; }
+  body #contact .contact-info {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around; }
+  body #contact .contact-info img {
+    width: 28px;
+    vertical-align: middle;
+    margin-right: 10px; }
+  body #contact .send {
+    width: 166px;
+    margin: auto;
+    font-size: 14px;
+    color: white;
+    background: #210368;
+    padding: 14px 24px;
+    width: 120px;
+    display: inline-block; }
+  body #projects .container-projects {
+    display: flex;
+    justify-content: space-around; }
+  body #projects .project img {
+    width: 450px;
+    height: 400px; }
+  body #projects .project h4 {
+    font-size: 25px;
+    text-align: center; }
   body ul li {
     list-style: none; }
+
+footer {
+  background: #504f52;
+  padding: 40px 0;
+  text-align: center;
+  margin-top: 40px; }
+  footer .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+  footer img {
+    margin: 0 40px;
+    transform: rotate(0);
+    transition: 0.4s; }
+  footer img:hover {
+    transform: rotate(360deg);
+    transition: 0.4s; }
+  footer p {
+    color: white;
+    margin-top: 40px; }

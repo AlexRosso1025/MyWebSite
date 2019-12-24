@@ -87,20 +87,132 @@
         <section id="knowledge">
             <div class="container">
                 <h3>Conocimientos</h3>
+                <div class="container-knowledge">
+                    <div class="card black">
+                        <h4>HTML</h4>
+                        <p>Básico</p>
+                        <img src="assets/html.png" alt="Logo de HTML">
+                    </div>
+                    <div class="card black">
+                        <h4>CSS</h4>
+                        <p>Básico</p>
+                        <img src="assets/css.png" alt="Logo de CSS">
+                    </div>
+                    <div class="card black">
+                        <h4>JAVASCRIPT</h4>
+                        <p>Básico</p>
+                        <img src="assets/javascript.png" alt="Logo de Javascript">
+                    </div>
+                    <div class="card black">
+                        <h4>JAVA</h4>
+                        <p>Intermedio</p>
+                        <img src="assets/java.png" alt="Logo de Java">
+                    </div>
+                    <div class="card black">
+                        <h4>MYSQL</h4>
+                        <p>Intermedio</p>
+                        <img src="assets/mysql.png" alt="Logo de MySql">
+                    </div>
+                    <div class="card black">
+                        <h4>PYTHON</h4>
+                        <p>Básico</p>
+                        <img src="assets/python.png" alt="Logo de Python">
+                    </div>
+                    <div class="card black">
+                        <h4>SPRING</h4>
+                        <p>Básico</p>
+                        <img src="assets/spring.png" alt="Logo de Sprig Boot" width="128px" height="120px">
+                    </div>
+                    <div class="card black">
+                        <h4>SASS</h4>
+                        <p>Básico</p>
+                        <img src="assets/sass.png" alt="Logo de Sass">
+                    </div>
+                    <div class="card black">
+                        <h4>JSP</h4>
+                        <p>Básico</p>
+                        <img src="assets/jsp.png" alt="Logo de Jsp">
+                    </div>
+                </div>
             </div>
         </section>
         <section id="projects">
             <div class="container">
                 <h3>Proyectos</h3>
+                <div class="container-projects">
+                    <div class="project">
+                        <h4>Artista Favorito</h4>
+                        <img src="assets/lavoe.jpg" alt="Imagen de Hector Lavoe">
+                    </div>
+                    <div class="project">
+                        <h4>Reloj</h4>
+                        <img src="assets/ios_clock.svg" alt="Imagen de un Reloj">
+                    </div>
+                    <div class="project">
+
+                    </div>
+                </div>
             </div>
         </section>
         <section id="contact">
             <div class="container">
                 <h3>Contacto</h3>
+                <form action="send-form.php" method="post" enctype="multipart/form-data">
+                    <input class="Name" type="text" placeholder="Nombre" name="Name" required>
+                    <input class="Email" type="email" placeholder="Email" name="Email" required>
+                    <textarea class="Message" placeholder="Mensaje" name="Message" required></textarea>
+                    <input type="submit" value="Enviar" class="send">
+                </form>
+                <div class="contact-info">
+                    <div class="mail"><img src="assets/mail.png" alt="mail icon">alexrosso1025@gmail.com</div>
+                    <div class="whatsapp"><img src="assets/whatsapp.png" alt="whatsapp icon">(+57) 300 289 93 77</div>
+                </div>
             </div>
         </section>
     </main>
+    <footer>
+        <div class="container">
+            <div class="networks">
+                <a href="https://www.facebook.com/AlexQuintero1025/" target="_blank"><img src="assets/facebook.png"
+                        alt="facebook image"></a>
+                <a href="https://www.instagram.com/rosso1025/" target="_blank"><img src="assets/instagram.png"
+                        alt="instagram icon"></a>
+                <a href="https://github.com/AlexRosso1025/" target="_blank"><img src="assets/github_footer.png"
+                        alt="github icon"></a>
+                <a href="https://www.linkedin.com/in/alexander-quintero-rosso/" target="_blank"><img
+                        src="assets/linkedin.png" alt="linkedin icon"></a>
+            </div>
+            <div class="paragraph">
+                <p> 2019 - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                scroll = $(window).scrollTop();
+                if (scroll > 100) {
+                    $(".menu").css({ "position": "fixed" });
+                    $(".menu").css({ "width": "100%" });
+                    $(".menu").css({ "top": "0" });
+                    $(".menu").css({ "background": "#fff" });
+                    $(".menu a").css({ "color": "black" });
+                    $(".paragraph").css({ "color": "black" });
+                    $(".menu").css({ "box-shadow": " rgba(0, 0, 0 , 0.22) 6px 1px 1px" });
+                    $(".menu").css({ "z-index": "100" });
+                } else {
+                    $(".menu").css({ "position": "relative" });
+                    $(".menu").css({ "background": "transparent" });
+                    $(".menu").css({ "box-shadow": "0 0 0" });
+                    $(".menu a").css({ "color": "white" });
+                    $(".paragraph").css({ "color": "white" });
+                }
+            })
+        })
+    </script>
 </body>
 
 </html>
